@@ -24,10 +24,14 @@
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 20px;
+                display: flex;
             }
             img {
                 max-width: 100%;
                 height: auto;
+            }
+            .artigo-autor {
+                 font-weight: bold;
             }
         </style>
     </head>
@@ -38,9 +42,10 @@
         </header>
 
         <main>
-            <article>
+            <div>
+                <article>
                 <h2>Meu primeiro post do Katseye</h2>
-                <p><strong>Por:</strong> Arthur da Palma de Almeida</p>
+                <p class="artigo-autor">Por: Arthur da Palma de Almeida</p>
                 <p>Boas-vindas ao meu blog de K-pop! Aqui você aprenderá e tirará dúvidas sobre o Katseye e o hiatus da Manon e da Sophia.</p>
                 
                 <img src="imagem-blog.jpeg" alt="A foto apresenta as seis integrantes do grupo KATSEYE reunidas em uma composição marcante e moderna, envolvidas por uma névoa suave e iluminação clara.">
@@ -48,6 +53,29 @@
                 <h3>Katseye:</h3>
                 <p>Um grupo formado por 6 integrantes. Com o afastamento temporário de Manon e Sophia, o grupo ficou com 4 integrantes ativas para se apresentar em shows. Sophia entrou em hiatus no dia 7 de agosto de 2026 para descanso e cuidados com a saúde mental. Já a Manon entrou em hiatus no dia 20 de fevereiro de 2026, também focado em sua saúde e bem-estar.</p>
             </article>
+            <button>🍒 <span>0</span></button>
+            <button>🐚​ <span>0</span></button>
+            <button>​⚓​ <span>0</span></button>
+            <button>​🛡️​<span>0</span></button>
+            <button>🗝️​ <span>0</span></button>
+            <button>👑 <span>0</span></button>
+            
+        </div>
+            
         </main>
     </body>
+    <script>
+        const botao = document.querySelectorAll("button");
+        botoes.forEach(function (botao){
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        text0.textContent++;
+        }        
+
+        })
+
+        
+    </script>
 </html>
